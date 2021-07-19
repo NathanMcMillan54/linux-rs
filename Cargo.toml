@@ -1,0 +1,8 @@
+[package]
+name = "linux-rs"
+edition = "2018"
+authors = ["Nathan McMillan <nathmcmillan54@gmail.com>"]
+version = "0.1.0"
+
+[target.'cfg(target_arch = "x86_64")'.dependencies]
+x86 = { path = "arch/x86/" }
